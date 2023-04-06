@@ -1,9 +1,9 @@
 {
-    "name": "erelke/twig-spreadsheet-bundle",
+    "name": "elghailani/twig-spreadsheet-bundle",
     "type": "symfony-bundle",
     "description": "This Symfony bundle integrates PhpSpreadsheet into Symfony using Twig.",
     "keywords": ["excel","phpexcel","spreadsheet","phpspreadsheet","twig","symfony"],
-    "homepage": "https://github.com/erelke/TwigSpreadsheetBundle",
+    "homepage": "https://github.com/elghailani/TwigSpreadsheetBundle",
     "license": "MIT",
     "authors": [
         {
