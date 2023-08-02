@@ -45,7 +45,7 @@ class AlignmentTokenParser extends BaseTokenParser
     /**
      * {@inheritdoc}
      */
-    public function getTag()
+    public function getTag(): string
     {
         return 'xls'.$this->alignment;
     }
