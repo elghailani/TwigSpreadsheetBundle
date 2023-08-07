@@ -65,7 +65,7 @@ class HeaderFooterTokenParser extends BaseTokenParser
     /**
      * {@inheritdoc}
      */
-    public function getTag()
+    public function getTag(): string
     {
         return 'xls'.$this->baseType;
     }

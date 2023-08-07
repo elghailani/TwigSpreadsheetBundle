@@ -19,7 +19,7 @@ class MacroContextNodeVisitor extends Twig_BaseNodeVisitor
     /**
      * {@inheritdoc}
      */
-    public function getPriority()
+    public function getPriority(): int
     {
         return 0;
     }
@@ -27,7 +27,7 @@ class MacroContextNodeVisitor extends Twig_BaseNodeVisitor
     /**
      * {@inheritdoc}
      */
-    protected function doEnterNode(Twig_Node $node, Twig_Environment $env)
+    protected function doEnterNode(Twig_Node $node, Twig_Environment $env): Twig_Node
     {
         // add wrapper instance as argument on all method calls
         if ($node instanceof Twig_Node_Expression_MethodCall) {
@@ -50,7 +50,7 @@ class MacroContextNodeVisitor extends Twig_BaseNodeVisitor
     /**
      * {@inheritdoc}
      */
-    protected function doLeaveNode(Twig_Node $node, Twig_Environment $env)
+    protected function doLeaveNode(Twig_Node $node, Twig_Environment $env): ?Twig_Node
     {
         return $node;
     }
