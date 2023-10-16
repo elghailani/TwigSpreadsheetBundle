@@ -12,7 +12,7 @@ class CellNode extends BaseNode
     /**
      * @param Twig_Compiler $compiler
      */
-    public function compile(Twig_Compiler $compiler)
+    public function compile(Twig_Compiler $compiler): void
     {
         $compiler->addDebugInfo($this)
             ->write(self::CODE_FIX_CONTEXT)
